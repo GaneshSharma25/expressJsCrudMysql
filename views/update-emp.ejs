@@ -1,0 +1,25 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdateEmployee</title>
+    <style>
+        form{
+            border: 2px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <form action="/updateEmployee" method="post">
+        Employee ID: <input type="text" name="empid" id="empid" value="<%= emp.empid %>" readonly><br>
+        Employee Name: <input type="text" name="ename" id="ename" value="<%= emp.ename %>"><br>
+        Salary: <input type="text" name="sal" id="sal" value="<%= emp.sal %>"><br>
+
+        <button type="submit" name="btn" id="btn" value="submit">Update Employee details</button>
+        <button type="reset" name="btn" id="btn" value="reset">Cancel</button>
+    </form>
+</body>
+</html>
